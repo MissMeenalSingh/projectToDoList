@@ -1,0 +1,10 @@
+.list-group-item.done {
+    color: var(--bs-list-group-disabled-color);
+    background-color: var(--bs-list-group-disabled-bg);
+    text-decoration: line-through;
+}
+
+.buttons {
+    float: right;
+    margin-top: 10px;
+}
