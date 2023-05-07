@@ -7,6 +7,7 @@ let btnAddTask = $('#btnAddTask')
 let btnClearTask = $('#btnClearTask')
 let ulTasks = $('#ulTasks')
 let btnCleanupTask = $('#btnCleanupTask')
+let btnSortTask = $('#btnSortTask')
 let count = 0
 
 
@@ -47,4 +48,8 @@ inputNewTask.keypress((e) => {
 
 btnCleanupTask.click(() => {
     $('#ulTasks .done').remove()
+})
+
+btnSortTask.click(() => {
+    $('#ulTasks .done').appendTo(ulTasks)
 })
