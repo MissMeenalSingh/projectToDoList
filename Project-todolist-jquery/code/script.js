@@ -6,6 +6,7 @@ let inputNewTask = $('#inpNewTask')
 let btnAddTask = $('#btnAddTask')
 let btnClearTask = $('#btnClearTask')
 let ulTasks = $('#ulTasks')
+let btnCleanupTask = $('#btnCleanupTask')
 let count = 0
 
 
@@ -42,4 +43,8 @@ btnClearTask.click(() => {
 
 inputNewTask.keypress((e) => {
     if(e.which == 13) addItem()
+})
+
+btnCleanupTask.click(() => {
+    $('#ulTasks .done').remove()
 })
